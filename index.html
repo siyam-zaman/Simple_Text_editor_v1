@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1497/1497550.png" type="image/x-icon">
+    <!-- !tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- !CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- !fontawesome -->
+    <script src="https://kit.fontawesome.com/9538e475ca.js" crossorigin="anonymous"></script>
+    <title>Text Editor</title>
+</head>
+<body class="bg-slate-400 mt-10">
+    <header>
+        <h1 class="Courier_font   uppercase text-5xl font-bold text-center">Text Editor</h1>
+    </header>
+    <main class="w-9/12 mx-auto rounded-xl p-5">
+        <div class="flex justify-between mb-2">
+            <!-- !Style -->
+            <div>
+                <button id="bold_btn" class="mx-5 py-4" type="button"><i class="fa-solid fa-bold"></i></button>
+                <button id="italic_btn" class="mx-5 py-4" type="button"><i class="fa-solid fa-italic"></i></button>
+                <button id="U_btn" class="mx-5 py-4" type="button"><i class="fa-solid fa-underline"></i></button>
+            </div>
+            <!-- !Align -->
+            <div>
+                <button id="LeftAlign_btn" class="mx-5 py-4" type="button"><i class="fa-solid fa-align-left"></i></button>
+                <button id="CenterAlign_btn" class="mx-5 py-4" type="button"><i class="fa-solid fa-align-center"></i></button>
+                <button id="RightAlign_btn" class="mx-5 py-4" type="button"><i class="fa-solid fa-align-right"></i></button>
+                <button id="JustifyAlign_btn" class="mx-5 py-4" type="button"><i class="fa-solid fa-align-justify"></i></button>
+            </div>
+            <!-- !Others -->
+            <div class="flex align-middle">
+                <input id="font-size" type="number" value="16" min="1" max="100" onchange="f1(this)"  class="rounded w-11 p-1 mx-5 my-4 bg-transparent" placeholder="size">
+                <button id="case" class="mx-5 py-4 text-xl font-semibold" type="button">aA</button>
+                <input class="mx-5 my-4" type="color" onchange="f2(this)">
+            </div>
+        </div>
+        <hr>
+        <textarea id="Input_data" class="mt-5 rounded p-[3rem] w-full h-96" placeholder="Enter your text"></textarea>
+    </main>
+    <!-- !js -->
+    <script src="./scripts.js"></script>
+</body>
+</html>
